@@ -6,6 +6,6 @@ from moviegpt.data.movie import get_data
 def test_get_data():
 
     import httpx
-    get_data()
+    get_data(start = 2010, end = 2020)
     httpx.get.assert_called()
 
