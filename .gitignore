@@ -5,3 +5,4 @@ db
 .tox
 movies.json
 .env
+.ruff_cache
