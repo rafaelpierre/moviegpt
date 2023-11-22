@@ -98,6 +98,13 @@ poetry run web
 
 <img src="https://github.com/rafaelpierre/moviegpt/blob/main/img/fastapi.png?raw=true" />
 
+## Development
+
+* Unit tests are run using `pytest` and `tox`.
+* To run unit tests, simply run: `tox`
+* For formatting: `tox -e fix`
+* For linting: `tox -e lint`
+
 ## Documentation
 
 **TODO**
