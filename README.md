@@ -19,7 +19,7 @@ The diagram below describes the architecture of **MovieGPT** in high level:
 **TODO**
 
 ## Getting started
-### Docker
+### Docker (recommended)
 
 🤖 Set up your OpenAI API Token:
 ```bash
@@ -94,7 +94,7 @@ poetry run web
 
 🕸️ Open the API docs and try it out: http://localhost/docs
 
-### Sample API response
+### Sample API request & response
 
 <img src="https://github.com/rafaelpierre/moviegpt/blob/main/img/fastapi.png?raw=true" />
 
