@@ -55,6 +55,43 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 
 🕸️ Open the API docs and try it out: http://localhost/docs
 
+### Running locally
+
+⚠️ Before proceeding, make sure you are using **Python 3.10.12**
+
+🏠 Install `poetry`:
+```bash
+pip install poetry
+```
+
+🏗️ Install the dependencies and activate a Poetry environment:
+```bash
+cd src && poetry shell && poetry install
+```
+
+🎥 Run **MovieGPT**:
+```bash
+> poetry run moviegpt
+
+Usage: moviegpt [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  data   Downloads WikiData for movies.
+  index  Creates a VectorDB Index based on Movie Metadata in JSON.
+  query  Queries the VectorDB using Semantic Similarity and outputs movie...
+  web    Runs our MovieGPT RAG App and exposes it through Fast API.
+```
+
+🪜 Run the following steps:
+```bash
+poetry run moviegpt data && \
+poetry run index && \
+poetry run web
+```
+
 ### Sample API response
 
 <img src="https://github.com/rafaelpierre/moviegpt/blob/main/img/fastapi.png?raw=true" />
