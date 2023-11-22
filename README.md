@@ -92,6 +92,8 @@ poetry run index && \
 poetry run web
 ```
 
+🕸️ Open the API docs and try it out: http://localhost/docs
+
 ### Sample API response
 
 <img src="https://github.com/rafaelpierre/moviegpt/blob/main/img/fastapi.png?raw=true" />
