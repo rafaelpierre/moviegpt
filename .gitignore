@@ -6,3 +6,4 @@ db
 movies.json
 .env
 .ruff_cache
+poetry.lock

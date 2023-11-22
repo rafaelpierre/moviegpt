@@ -79,7 +79,8 @@ def get_data(start: int, end: int, path: str, sample: float, debug: bool):
 
 @click.command(name="index")
 @click.option("--input_path", type=str, default="/tmp/movies.json")
-def create_index(input_path: str):
+@click.option("--api_key", type=str)
+def create_index(input_path: str, api_key: str):
     """
     Creates a VectorDB Index based on Movie Metadata in JSON.
 
@@ -89,12 +90,12 @@ def create_index(input_path: str):
 
     click.echo(
         click.style(
-            f"\n🎥 Creating vector index based on data from {input_path}...",
+            f"\n\n🎥 Creating vector index based on data from {input_path}...",
             bold = True,
             fg = "white"
         )
     )
-    provider = RAGProvider()
+    provider = RAGProvider(api_key = api_key)
     provider.create_index()
 
     click.echo(
