@@ -6,8 +6,8 @@ import click
 from moviegpt.data.utils import get_movies
 from moviegpt.providers.rag import RAGProvider
 from moviegpt.prompts.recommendation import RecommendationPrompt
+from moviegpt.api import server
 import os
-import json
 
 @click.group()
 def app():
@@ -181,11 +181,24 @@ def query():
         )
     )
 
+@click.command()
+@click.option('--logs', default='info', help='Verbosity level, defaults to INFO')
+@click.option('--host', default='0.0.0.0', help='Host Address, defaults to 0.0.0.0')
+@click.option('--port', default='8000', help='HTTP Port for Backend, defaults to 8000')
+def web(logs: str, host: str, port: str):
+    """Runs our MovieGPT RAG App and exposes it through Fast API."""
+
+    logging.basicConfig(level = logs.upper())
+    logging.info("Starting web server...")
+    server.run(["uvicorn", "moviegpt.api.web:app", "--host", host, "--port", port])
+
+    
 
 
 app.add_command(name="data", cmd=get_data)
 app.add_command(name="index", cmd=create_index)
 app.add_command(name="query", cmd=query)
+app.add_command(name="web", cmd=web)
 
 def main():
     app(standalone_mode=True)
