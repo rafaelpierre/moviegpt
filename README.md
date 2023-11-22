@@ -58,3 +58,7 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ### Sample API response
 
 <img src="https://github.com/rafaelpierre/moviegpt/blob/main/img/fastapi.png?raw=true" />
+
+## Documentation
+
+**TODO**
