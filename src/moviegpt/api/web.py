@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.requests import Request
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
+from pydantic import BaseModel
 import logging
 import os
 
@@ -10,16 +11,38 @@ from moviegpt.prompts.recommendation import RecommendationPrompt
 
 app = FastAPI()
 
-@app.post("/generate")
+class Prompt(BaseModel):
+    details: str
+
+    model_config = {
+        "json_schema_extra": {
+            "examples": [
+                {
+                    "details": "Movies similar to The Godfather"
+                },
+                {
+                    "details": "spiderman"
+                },
+            ]
+        }
+    }
+
+@app.post("/generate", tags=["Generate"])
 async def generate(
     req: Request,
-    message: dict
+    prompt_obj: Prompt
 ):
-    try:
-        logging.info(f"Question: {message['question']}")
-        question = message["question"]
+    """Generates movie recommendations.
 
-        prompt = RecommendationPrompt(details = question)
+    Params:
+
+        prompt_obj: Prompt object containing movie recommendation details.
+
+    """
+    try:
+        logging.info(f"Prompt: {prompt_obj.details}")
+
+        prompt = RecommendationPrompt(details = prompt_obj.details)
         logging.info(f"Prompt: {str(prompt)}")
 
         provider = RAGProvider(api_key = os.environ["OPENAI_API_KEY"])
