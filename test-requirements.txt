@@ -3,3 +3,4 @@ ruff
 coverage[toml]
 pytest-cov
 pydantic
+python-dotenv

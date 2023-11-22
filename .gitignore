@@ -3,3 +3,5 @@ __pycache__
 coverage.xml
 db
 .tox
+movies.json
+.env

@@ -1,5 +1,6 @@
 import pytest
 import shutil
+import os
 
 @pytest.fixture()
 def review():
@@ -11,17 +12,6 @@ def review():
     """
 
     return data
-
-@pytest.fixture(scope = "session")
-def chroma_helper():
-    
-    from moviegpt.data.chroma import ChromaHelper
-    return ChromaHelper(path = ".tox/db")
-
-@pytest.fixture(scope = "session")
-def chroma_collection(chroma_helper):
-    shutil.rmtree(".tox/db")
-    return chroma_helper.client.create_collection(name = "movies")
 
 @pytest.fixture(scope = "session")
 def movie():
@@ -51,4 +41,12 @@ def movie():
     """
 
     return movie_str
+
+@pytest.fixture(scope = "session")
+def api_key():
+
+    from dotenv import load_dotenv
+    load_dotenv()
+    
+    return os.environ["OPENAI_API_KEY"]
 
