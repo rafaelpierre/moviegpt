@@ -99,7 +99,7 @@ def create_index(input_path: str):
 
     click.echo(
         click.style(
-            f"\n✨ Finished!",
+            "\n✨ Finished!",
             bold = True,
             fg = "white"
         )
@@ -112,7 +112,7 @@ def query():
     using OpenAI.
     """
 
-    intro_msg = f"""
+    intro_msg = """
     \n🤔 Hey! Give me some details about your favorite types of movies
 🎁 I'll then do my best to provide some awesome movie recommendations.
 🍿 Feel free to mention genres, actors, storyline aspects or movie titles!
@@ -133,7 +133,7 @@ def query():
 
     click.echo(
         click.style(
-            f"\n⌛ Getting movie recommendations from OpenAI...",
+            "\n⌛ Getting movie recommendations from OpenAI...",
             bold = True,
             fg = "white"
         )
@@ -143,7 +143,7 @@ def query():
 
     click.echo(
         click.style(
-            f"\n✨ Here are your movie recommendations:\n\n",
+            "\n✨ Here are your movie recommendations:\n\n",
             bold = True,
             fg = "white"
         )
@@ -175,7 +175,7 @@ def query():
 
     click.echo(
         click.style(
-            f"\n✨ Hope you enjoyed my recommendations! 😀\n",
+            "\n✨ Hope you enjoyed my recommendations! 😀\n",
             bold = True,
             fg = "green"
         )
