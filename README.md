@@ -8,9 +8,9 @@
 
 In order to achieve that, it relies on the following components:
 
-* **Open Source Data**: we rely on movie data provided by Wikipedia, such as: movie summaries, genres, actor names and so on. This data is converted to embeddings for further indexing in a **Vector Database**.
-* **Retrieval Augmented Generation (RAG)**: we use a **Vector Database** and **semantic search** in order to guarantee relevant results. This way, we limit the **context** that is provided to **large language models** when generating recommendations, hence reducing the risk of **hallucinations** in the process.
-* **ChatGPT**: we use ChatGPT for formatting the responses with movie recommendations in a human-like fashion. 
+📚 **Open Source Data**: we rely on movie data provided by [Wikipedia](https://www.wikipedia.org/), such as: movie summaries, genres, actor names and so on. This data is converted to embeddings for further indexing in a **Vector Database**.
+🐕 **Retrieval Augmented Generation (RAG)**: we use a **Vector Database** and **semantic search** in order to guarantee relevant results. This way, we limit the **context** that is provided to **large language models** when generating movie recommendations, hence reducing the risk of **hallucinations** in the process.
+🤖 **ChatGPT**: we use [ChatGPT](https://chat.openai.com/) for formatting the responses with movie recommendations in a human-like fashion. 
 
 ## Architecture
 
