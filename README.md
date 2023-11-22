@@ -20,4 +20,21 @@ make docker
 make run
 ```
 
+```bash
+
+         __   __  _______  __   __  ___   _______  _______  _______  _______ 
+        |  |_|  ||       ||  | |  ||   | |       ||       ||       ||       |
+        |       ||   _   ||  |_|  ||   | |    ___||    ___||    _  ||_     _|
+        |       ||  | |  ||       ||   | |   |___ |   | __ |   |_| |  |   |  
+        |       ||  |_|  ||       ||   | |    ___||   ||  ||    ___|  |   |  
+        | ||_|| ||       | |     | |   | |   |___ |   |_| ||   |      |   |  
+        |_|   |_||_______|  |___|  |___| |_______||_______||___|      |___|  
+    
+INFO:root:Starting web server...
+INFO:     Started server process [29]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+```
+
 🕸️ Open the API docs and try it out: http://localhost/docs
