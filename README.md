@@ -2,6 +2,22 @@
 
 ![version](https://img.shields.io/badge/version-0.0.1-red?style=for-the-badge) ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white) ![python](https://img.shields.io/badge/python-3.10-blue?style=for-the-badge) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![ruff](https://img.shields.io/badge/lint-ruff-gold?style=for-the-badge) ![poetry](https://img.shields.io/badge/packaging-poetry-cyan?style=for-the-badge) ![LlamaIndex](https://img.shields.io/badge/LlamaIndex-%F0%9F%A6%99-black?labelColor=purple&style=for-the-badge)
 
+## AI Powered Movie Recommendations
+
+**MovieGPT** leverages the power of **Generative AI** in order to provide relevant movie recommendations based on user input.
+
+In order to achieve that, it relies on the following components:
+
+* **Open Source Data**: we rely on movie data provided by Wikipedia, such as: movie summaries, genres, actor names and so on. This data is converted to embeddings for further indexing in a **Vector Database**.
+* **Retrieval Augmented Generation (RAG)**: we use a **Vector Database** and **semantic search** in order to guarantee relevant results. This way, we limit the **context** that is provided to **large language models** when generating recommendations, hence reducing the risk of **hallucinations** in the process.
+* **ChatGPT**: we use ChatGPT for formatting the responses with movie recommendations in a human-like fashion. 
+
+## Architecture
+
+The diagram below describes the architecture of **MovieGPT** in high level:
+
+**TODO**
+
 ## Getting started
 ### Docker
 
