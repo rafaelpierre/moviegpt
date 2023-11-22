@@ -5,19 +5,19 @@
 ## Getting started
 ### Docker
 
-1. Set up your OpenAI API Token:
+🤖 Set up your OpenAI API Token:
 ```bash
 export OPENAI_API_TOKEN=#YOUR_TOKEN
 ```
 
-2. Build the Docker image:
+🐋 Build the Docker image:
 ```bash
 make docker
 ```
 
-3. Run the container:
+🏃‍♂️ Run the container:
 ```bash
 make run
 ```
 
-4. Open the API docs and try it out: http://localhost/docs
+🕸️ Open the API docs and try it out: http://localhost/docs
