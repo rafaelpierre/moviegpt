@@ -55,7 +55,7 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 
 🕸️ Open the API docs and try it out: http://localhost:8000/docs
 
-### Running locally
+### Without Docker (Pure Python)
 
 ⚠️ Before proceeding, make sure you are using **Python 3.10.12**. We strongly recommend `pyenv`:
 
