@@ -55,7 +55,7 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
-🕸️ Open the API docs and try it out: http://localhost/docs
+🕸️ Open the API docs and try it out: http://localhost:8000/docs
 
 ### Running locally
 
