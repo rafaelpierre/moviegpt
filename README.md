@@ -99,6 +99,24 @@ poetry run web
 
 🕸️ Open the API docs and try it out: http://localhost/docs
 
+### CLI Mode
+
+* CLI mode is also available. To run it, after you've installed dependencies, simply run: `moviegpt`
+* If everything was installed correctly, you should be presented with the following welcome screen:
+
+```bash
+Usage: moviegpt [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  data   Downloads WikiData for movies.
+  index  Creates a VectorDB Index based on Movie Metadata in JSON.
+  query  Queries the VectorDB using Semantic Similarity and outputs movie...
+  web    Runs our MovieGPT RAG App and exposes it through Fast API.
+```
+
 ### Sample API request & response
 
 <img src="https://github.com/rafaelpierre/moviegpt/blob/main/img/fastapi.png?raw=true" />
