@@ -16,6 +16,8 @@
 
 The diagram below describes the architecture of **MovieGPT** in high level:
 
+<img src="https://github.com/rafaelpierre/moviegpt/blob/main/img/arch.png?raw=true" />
+
 **TODO**
 
 ## Getting started
