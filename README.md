@@ -69,7 +69,7 @@ pyenv shell 3.10.2 #Voila!
 pip install poetry
 ```
 
-🏗️ Activate the Poetry environment install the dependencies:
+🏗️ Activate the Poetry environment and install dependencies:
 ```bash
 cd src && poetry shell && poetry install
 ```
