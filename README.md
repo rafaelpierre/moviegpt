@@ -119,6 +119,8 @@ Commands:
 
 ### Sample API request & response
 
+Running the Docker container or `moviegpt web` after ingesting the data and creating the vector index will expose `moviegpt` through a FastAPI web interface:
+
 <img src="https://github.com/rafaelpierre/moviegpt/blob/main/img/fastapi.png?raw=true" />
 
 ## Development
