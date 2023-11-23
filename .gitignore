@@ -8,3 +8,4 @@ movies.json
 .ruff_cache
 poetry.lock
 storage
+dist
