@@ -57,7 +57,12 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 
 ### Running locally
 
-⚠️ Before proceeding, make sure you are using **Python 3.10.12**
+⚠️ Before proceeding, make sure you are using **Python 3.10.12**. We strongly recommend `pyenv`:
+
+```bash
+pyenv install 3.10.12
+pyenv shell 3.10.2 #Voila!
+```
 
 🏠 Install `poetry`:
 ```bash
