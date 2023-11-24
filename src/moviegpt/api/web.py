@@ -64,6 +64,8 @@ async def generate(
         provider = RAGProvider(api_key = os.environ["OPENAI_API_KEY"])
         response = provider.query(prompt = prompt)
         payload = jsonable_encoder({"answer": str(response)})
+
+        logging.info(f"Response from ChatGPT: {payload}")
         response = JSONResponse(content=payload)
 
         return response
